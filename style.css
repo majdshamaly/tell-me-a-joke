@@ -1,0 +1,68 @@
+/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #45badd;
+}
+
+.proContainer {
+  height: 100vh;
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.tellMeAjokeBtn {
+  grid-row: 1/-1;
+  padding: 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+.tellMeAjokeBtn:hover {
+  cursor: pointer;
+  filter: brightness(150%);
+}
+
+.tellMeAjokeBtn:active {
+  transform: translate(0.3rem, 0.3rem);
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gif {
+  grid-row: 1/-1;
+}
+
+@media screen and (max-width: 1000px) {
+  .proContainer {
+    height: 100vh;
+    min-width:100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .tellMeAjokeBtn {
+    padding: 13px;
+    font-size: 1.54rem;
+    grid-column: 1/-1;
+    z-index: 5;
+    margin-top: 23rem;
+  }
+
+  .gif {
+    width: 580px;
+    grid-column: 1/-1;
+  }
+}
